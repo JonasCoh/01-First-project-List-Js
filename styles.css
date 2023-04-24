@@ -1,0 +1,151 @@
+html, body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url(image/tile.jpg);
+}
+header{
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+}
+
+/* h1{ */
+    /* font-family: 'Mochiy Pop One', sans-serif; */
+/* } */
+
+form textarea{
+    /* resize: unset; */
+    background-image: url(image/formbg.jpg);
+    background-size: contain;
+    width: 65%;
+    max-height: 200px;
+    min-height: 200px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-details{
+    text-align: center;
+}
+
+/* form input[type="time"], form input[type="date"]{ */
+    /* border: none;
+    padding: 4px;
+    font-family: "Roboto Mono",monospace;
+    color: #212529;
+    font-size: 18px;
+    width: 20%;
+    border-radius: 10px;
+    height: 30px;
+} */
+
+button[type="submit"]{
+    background-color: rgb(60, 128, 0);
+    width: 12%;
+    height: 30px;
+    padding: 1px;
+}
+
+button[type="reset"]{
+    background-color: red;
+    width: 12%;
+    height: 30px;
+    padding: 1px;
+}
+button[type="submit"]:hover{
+    background-color: rgba(0, 128, 0, 0.638);
+}
+
+button[type="reset"]:hover{
+    background-color: rgba(255, 0, 0, 0.732);
+}
+
+webkit-calender-picker-indicator{
+    background-color: #ffffff;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+  
+/* .message ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 50px;
+    height: 300px;
+    padding: 16px;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+} */
+
+
+#taskBoard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+
+.note{
+    font-size: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 370px;
+    width: 250px;
+    background-image: url(image/notebg.png);
+    position: relative;
+    margin-left: 30px;
+}
+
+.note-content{
+    margin-top: 60px;
+    margin-left: 10px;
+    text-align: center;
+    width: 90%;
+    height:60%;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+
+.note-metadata{
+    position: absolute;
+    bottom: 10px;
+    left: 3%;
+}
+
+.cancel{
+    position: absolute;
+    top: 30px;
+    right: 10%;
+    color:#FEFF99 ;
+}
+
+.cancel:hover{
+    cursor: pointer;
+    color: black;
+}
+
+/* #taskBoard{ */
+    /* background-image: url(image/notebg.png);
+    background-repeat: no no-repeat  */
+/* } */
+@keyframes anim{
+    0%{color: rgba(0, 0, 0, 0.1);}
+    25%{color: rgba(0, 0, 0, 0.25);}
+    50%{color: rgba(0, 0, 0, 0.5);}
+    75%{color: rgba(0, 0, 0, 0.75);}
+    100%{color: rgba(0, 0, 0, 1);}
+}
+
+
